@@ -1,0 +1,1078 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#particles-js {
+    width: 100%;
+    height: 1480px;
+    position: absolute;
+    z-index: 1;
+    top:0px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+#second-nav{
+    display: none;
+}
+
+#nav2{
+    color: white;
+    display: none;
+}
+
+#nav2 a:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition-duration: 0.4s;
+    color: rgb(237, 107, 248);
+}
+
+#nav2 a:focus{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition-duration: 0.4s;
+    color: rgb(237, 107, 248);
+    outline: none;
+    border: 2px solid #73dff5;
+    border-radius:5px; 
+    padding: 5px; 
+}
+
+#nav2 a:visited{
+    color:  #73dff5;
+}
+
+  /* Menu */
+
+.container {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+.navbar .menu-items {
+    display: flex;
+}
+
+.navbar .nav-container li {
+    list-style: none;
+}
+
+.navbar .nav-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+.menu-items a:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition-duration: 0.4s;
+    color: rgb(237, 107, 248);
+}
+
+.menu-items a:focus{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition-duration: 0.4s;
+    color: rgb(237, 107, 248);
+    outline: none;
+    border: 2px solid #73dff5;
+    border-radius:5px; 
+    padding: 5px; 
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 50px;
+    left: 20px;
+    z-index: 6;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 54px;
+    left: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: flex;
+    justify-content: center;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+    padding-top: 100px;
+    box-shadow: inset 0 0 100px rgb(0, 0, 0);
+    background-color: rgba(0,0,0,.5);
+    height: 300px;
+    width: 100%;
+    transform: translateY(-250%);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    z-index: 4;
+}
+
+.navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+}
+
+/* Fin Menu*/
+
+#upper {
+    height: 1393px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(12deg, rgba(30,10,255,0.5) 0%, rgba(0,0,0,1) 66%);
+}
+
+#bio-name{
+    display: none;
+}
+
+#my-pic {
+    position: absolute;
+    width: 50%;
+    z-index: 2;
+    top: 400px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: white;
+    font-family: 'Just Another Hand', cursive;
+    position: absolute;
+    top: 42px;
+    right: 10px;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+#bio{
+    color: white;
+    position: absolute;
+    top: 600px;
+    width: 80%;
+    background-color: rgba(56, 56, 56, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+#bio>p{
+    font-size: 20px;
+}
+
+#formation{
+    position: absolute;
+    top: 1180px;
+    z-index: 3;
+    color: white;
+}
+
+#formation>ul{
+    width: 60%;
+    font-size: 14px;
+}
+
+
+#books{
+    width: 100%;
+    position: absolute;
+    top: 1172px;
+    opacity: 0.9;
+    height: 280px;
+}
+
+h3{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+h4{
+    margin: 0px 0px 0px 15px;
+}
+
+#realisations{
+    background-image: url(./img/code.jpg);
+    background-size: cover;
+    width: 100%;
+
+    border-top: 3px solid white;
+}
+
+#filter{
+    background-color:  rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#reali-text{
+    color: white;
+    width: 80%;
+    background-color:  rgba(0, 0, 0, 0.75);
+    padding: 10px;
+}
+
+#reali-text>h3{
+    font-size: 40px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+#reali-text>p{
+    font-size: 20px;
+}
+
+#reali-img-links{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+}
+
+#reali-img-links h3, .animationsProject h3, .prototypeProject h3{
+    margin: 0;
+    text-align: center;
+}
+
+#reali-img-links h2, .animationsProject h2, .prototypeProject h2{
+    margin-top: 4px;
+}
+
+#reali-img-links img{   
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#reali-img-links section, .animationsProject section, .prototypeProject section{
+    background-color: #000000;
+    margin: 20px 0;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+#reali-img-links ul, .animationsProject ul, .prototypeProject ul{
+    list-style: none;
+    text-align: center;
+    padding: 3px;
+}
+
+
+
+#animations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: color 20s infinite linear;
+    border-top: 3px solid white;
+    padding-top: 20px;
+}
+
+.animationsProject{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+}
+
+.animationsProject img{
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.animationsProject p, #reali-img-links p, .prototypeProject p{
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+
+#anim-text{
+    color: white;
+    width: 80%;
+    background-color:  rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#anim-text h3{
+    margin-left: 0;
+}
+
+#proto{
+    background-image: url(./img/proto-1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 3px solid white;
+}
+
+#proto-text{
+    color: white;
+    width: 80%;
+    background-color:  rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+#proto-text h3{
+    margin-left: 0;
+}
+
+.prototypeProject{
+    width: 40%;
+    border-radius: 10px;
+    color: white;
+}
+
+.prototypeProject img{
+    width: 100%;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid white;
+    background: #000000;
+    color: white;
+    padding: 30px 40px 60px 40px;
+}
+
+.animate__animated.animate__bounceInUp{
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeIn{
+    --animate-duration: 2s;
+}
+
+@keyframes color {
+    0%   { background: #000000; }
+    25%  { background: #7a0072; }
+    50%  { background: #000000; }
+    75%  { background: #005b8c; }
+    100% { background: #000000; }
+}
+
+#footer-nav{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 40%;
+}
+
+#footer-nav div{
+    width: auto;
+}
+
+#email, #linkedin{
+    display: inline-block;
+    width: 40px;
+}
+
+#email img, #linkedin img{
+    width: 100%;
+}
+
+#email-div, #linkedin-div{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+#email-div a:focus, #linkedin-div a:focus{
+    outline: none;
+    border: none;
+}
+
+#email-text-link, #linkedin-text-link{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#contact{
+    width: 40%;
+}
+
+footer h4{
+    margin-left: 0;
+}
+
+footer a{
+    display: inline-block;
+    border-radius: 10px;
+}
+
+footer a:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    transition-duration: 0.4s;
+    color: rgb(237, 107, 248);
+}
+
+footer a:focus{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    transition-duration: 0.4s;
+    color: rgb(237, 107, 248);
+    outline: none;
+    border: 2px solid #73dff5;
+    border-radius:5px; 
+    padding: 5px; 
+}
+
+@media screen and (min-width: 481px) {
+    #formation>ul{
+        width: 60%;
+        font-size: 16px;
+    }
+
+    #upper{
+        height: 1412px;
+    }
+
+    #particles-js{
+        height: 1412px;
+    }
+
+    #books{
+        height:300px;
+    }
+
+    #reali-links{
+        font-size: 18px;
+    }
+
+    #bio{
+        top: 650px;
+    }
+
+    #reali-links{
+        width: 80%;
+    }
+
+    .prototypeProject{
+        margin-top:10px;
+    }
+
+
+    
+}
+
+@media screen and (min-width: 600px) {
+    #formation>ul{
+        width: 60%;
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    #books{
+        height: 400px;
+    }
+
+    #upper{
+        height: 1511px;
+    }
+
+    #bio{
+        top: 700px;
+    }
+    
+    #particles-js {
+        height: 1511px;
+    }
+
+    .prototypeProject{
+        width: 35%;
+    }
+
+    #proto{
+        padding: 30px;
+    }
+
+    footer{
+        padding: 50px 60px 100px 60px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    h3, h4{
+        margin-left: 25px;
+    }
+
+    #formation>ul{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1{
+        font-size: 50px;
+        top: 35px;
+        right: 20px;
+    }
+
+    #formation{
+        top: 1220px;
+    }
+
+    #formation>ul{
+        margin-left: 35px;
+    }
+}
+
+@media screen and (min-width: 850px){
+    h3{
+        font-size: 35px;
+        margin-left: 35px;
+    }
+
+    h4{
+        margin-left: 35px;
+        font-size: 25px;
+    }
+
+    #my-pic{
+        top: 440px;
+    }
+
+    #formation>ul{
+        width: 65%;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    #books{
+        height: 500px;
+    }
+
+    #upper{
+        height: 1610px;
+    }
+
+    #bio{
+        top:810px;
+
+    }
+
+    #particles-js {
+        height: 1610px;
+    }
+
+    #reali-links{
+        display: none;
+    }
+
+    #reali-img-links{
+        display: flex;
+        width: 80%;
+        position: relative;
+        z-index: 3;
+    }
+
+
+    #reali-img-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    #reali-img-links a{
+        display: block;
+        height: 140px;
+        border-radius: 5px;
+    }
+
+    #reali-img-links a:hover{
+        outline: 5px solid rgb(237, 107, 248);
+    }
+
+    #reali-img-links a:focus{
+        outline: 5px solid rgb(237, 107, 248);
+    }
+
+}       
+
+@media screen and (min-width: 1025px) {
+    
+    .navbar{
+        display: none;
+    }
+    
+    h1{
+        display: none;
+    }
+
+    #my-pic {
+        width: 30%;
+        left: 40px;
+        margin: 0;
+        top: 380px;
+    }
+
+    #bio{
+        width: 55%;
+        top: 185px;
+        right: 0px;
+        left: 400px;
+        margin: 0;
+    }
+
+    #books{
+        top: 770px;
+        height: 600px;
+    }
+
+    #formation{
+        top: 880px;
+    }
+
+    #nav2{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    #nav2>a{
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+    }
+
+    #bio-name{
+        display: block;
+    }
+
+    h2{
+        margin: 0;
+    }
+
+    #second-nav{
+        position: fixed;
+        z-index: 4;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    #particles-js, #upper {
+        height: 1370px;
+    }
+
+    #reali-img-links img{
+        height: 180px;
+    }
+
+    #reali-img-links a{
+        height: 180px;
+    }
+
+    #reali-img-links{
+        flex-direction: row;
+    }
+
+    #reali-img-links section{
+        width:  30%;
+        height: 500px;
+    }
+
+    #proto{
+        height: 850px;
+        padding: 50px;
+    }
+
+    footer{
+        padding: 50px 200px 100px 200px;
+    }
+
+    #footer-nav, #contact{
+        width: 35%;
+    }
+
+    .prototypeProject section{
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+    #bio{
+        width: 63%;
+        top: 200px;
+        left: 350px;
+        margin: 0;
+    }
+
+    #my-pic {
+        width: 25%;
+    }
+
+    h3{
+        
+        margin-left: 70px;
+    }
+
+    h4{
+        margin-left: 70px;
+    }
+
+    #formation>ul{
+        margin-left: 90px;
+    }
+
+    #reali-img-links img{
+        height: 190px;
+    }
+
+    #reali-img-links a{
+        height: 190px;
+    }
+
+}
+
+@media screen and (min-width: 1150px) {
+    #bio{
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #bio{
+        left: 360px;
+    }
+
+    #proto{
+        height: 950px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #bio{
+        left: 385px;
+    }
+
+    #realisations{
+        height: 800px;
+    }
+
+    #anim-text{
+        width: 45%;
+        margin-left: 70px;
+    }
+
+    #anim-text h3{
+        margin-left:0;
+    }
+
+    #anim-text p, #proto-text p{
+        font-size: 20px;
+    }
+
+    .animationsProject{
+        width: 45%;
+        margin-right: 70px;
+    }
+
+    footer a{
+        font-size: 20px;
+    }
+
+    #realisations{
+        height: 950px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #bio{
+        left: 400px;
+    }
+
+    #reali-img-links img{
+        height: 230px;
+    }
+
+    #reali-img-links a{
+        height: 230px;
+    }
+
+    .prototypeProject section{
+        width: 70%;
+    }
+
+    #animations{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .animationsProject{
+        width: 35%;
+    }
+
+
+}
+
+@media screen and (min-width: 1400px) {
+    #bio{
+        left: 420px;
+        top: 240px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #bio{
+        left: 450px;
+        top: 270px;
+    }
+    #my-pic {
+        left:60px;
+        top: 450px;
+    }
+
+    #formation{
+        top: 900px;
+    }
+
+    #reali-img-links img{
+        height: 250px;
+    }
+
+    #reali-img-links a{
+        height: 250px;
+    }
+
+    #animations{
+        padding: 60px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #bio{
+        left: 480px;
+        top: 280px;
+    }
+
+    #books{
+        top: 850px;
+    }
+
+    #formation{
+        top: 930px;
+    }
+
+    #upper{
+        height: 1450px;
+    }
+
+    #particles-js {
+        height: 1450px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    #bio{
+        left: 500px;
+    }
+
+    #upper{
+        height: 1490px;
+    }
+
+    #particles-js {
+        height: 1490px;
+    }
+
+    #books{
+        top: 890px;
+    }
+
+    #proto{
+        height: 1000px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    #bio{
+        left: 540px;
+        top: 300px;
+    }
+
+    #my-pic {
+        top: 470px;
+    }
+
+    #formation{
+        top: 970px;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    #bio{
+        left: 590px;
+    }
+
+    #realisations, #animations{
+        height: 100vh;
+    }
+
+
+    #my-pic{
+        width: 20%;
+    }
+
+    #bio{
+        width: 60%;
+        margin-left: 100px;
+    }
+
+    .prototypeProject{
+        width: 35%;
+    }
+
+    #proto{
+        height: 1100px;
+    }
+
+    .animationsProject{
+        width: 35%;
+    }
+
+}
+
+@media screen and (min-width: 2250px) {
+    .prototypeProject{
+        width: 30%;
+    }
+
+    #reali-img-links section{
+        height: 550px;
+    }
+}
+
+

@@ -1,0 +1,11 @@
+[
+    {
+        "name" : "Prototype web",
+        "date" : "2023",
+        "technologies" : [
+            "FIGMA"
+        ],
+        "imgSrc": "../img/proto-img.jpg",
+        "description": "Prototype complet d'un site web réalisé pour l'organisme des Compagnons de la mise en valeur du patrimoine vivant de trois-pistoles."
+    }
+]

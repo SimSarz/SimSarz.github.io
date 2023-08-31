@@ -1,0 +1,12 @@
+[
+    {
+        "name" : "Animation 2D",
+        "date" : "2022",
+        "technologies" : [
+            "ADOBE ANIMATE",
+            "ADOBE AFTER EFFECTS"
+        ],
+        "imgSrc": "../img/animation.gif",
+        "description": "Réalisation d'une animation 2D en utilisant le 'camera tracking' et les logiciels Adobe Animate et Adobe After Effects."
+    }
+]

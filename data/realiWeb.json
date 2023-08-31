@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Css Properties",
+        "date": "2023",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JAVASCRIPT",
+            "NPM"
+        ],
+        "imgSrc": "../img/css3.jpg",
+        "description": "Travail scolaire - Réalisation d'un site web représentant différentes propriétés Css3."
+    },
+    {
+        "name": "Pc Shop",
+        "date": "2023",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "SASS",
+            "JAVASCRIPT",
+            "NPM"
+
+        ],
+        "imgSrc": "../img/pc-shop.jpg",
+        "description": "Travail scolaire - Réalisation de la page d'accueil d'un magasin en ligne de composantes d'ordinateur."
+    },
+    {
+        "name": "Api météo",
+        "date": "2023",
+        "technologies":[
+            "HTML",
+            "CSS",
+            "JAVASCRIPT",
+            "API",
+            "REACT"
+        ],
+        "imgSrc": "../img/api-meteo.jpg",
+        "description": "Travail scolaire - Réalisation d'une application météo récupérant les données d'une API."
+    }
+]
