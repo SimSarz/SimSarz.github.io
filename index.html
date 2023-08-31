@@ -1,1 +1,154 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Simon Sarrazin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="./js/realiWeb.js" defer></script>
+    <script src="./js/animations.js" defer></script>
+    <script src="./js/prototype.js" defer></script>
+</head>
+<body>
+    
+        <header>
+            <nav>
+                <div class="navbar">
+                    <div class="container nav-container">
+                        <input class="checkbox" type="checkbox" area-label="menu" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>  
+                        <div class="menu-items">
+                            <li><a href="#upper">Qui suis-je?</a></li>
+                            <li><a href="#books">Formation</a></li>
+                            <li><a href="#realisations">Réalisation web</a></li>
+                            <li><a href="#animations">Création d'animations</a></li>
+                            <li><a href="#proto">Prototypage</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </div> 
+                    </div>
+                </div>
+            </nav>
+            <section id='second-nav'>
+                <nav id="nav2">
+                    <a  href="#upper">Qui suis-je?</a>
+                    <a  href="#books">Formation</a>
+                    <a  href="#realisations">Réalisation web</a>
+                    <a  href="#animations">Création d'animations</a>
+                    <a  href="#proto">Prototypage</a>
+                    <a  href="#contact">Contact</a>
+                </nav>
+            </section>
+        </header>
+    <main>
+        <div id="upper">
+            <div id="particles-js">
+                <h1>Simon Sarrazin</h1>
+                <img id="my-pic" class="animate__animated animate__fadeIn" src="./img/my-pic.png" alt="ma photo">
+                <div id="bio" class="animate__animated animate__bounceInUp">
+                    <h2 id="bio-name">Simon Sarrazin</h2>
+                    <h2>Développeur front - end (junior)</h2>
+                    <p>Développeur pationné par les possibilités infinies qu’offre le développement web. Ma soif d’apprendre et ma curiosité m’ont permis de découvrir les merveilles du développement web.</p>
+                    <p>Ayant un “background” en production musicale, l’étude des différents languages de programmation web est venu ajouter plusieurs cordes à mon arc. </p>
+                    <p>Grace à mon intérêt particulier pour la production d’éléments interactifs et animés, j’aspire à travailler de pair avec une équipe de développement dynamique qui me permettera d’exploiter mon plein potentiel.</p>
+                </div>
+                <img id="books" src="./img/livres.jpg" alt="books background">
+                <div id="formation" class="wow animate__animated animate__fadeInLeft" data-wow-duration="2s">
+                    <h3>Attestation d’étude collégiale - Production en médias interactifs</h3>
+                    <h4>Cégep de Limoilou (2022-2023)</h4>
+                    <ul>
+                        <li>Étude des languages de programmation web : Html, css et javascript</li>
+                        <li>Marketing web</li>
+                        <li>Design Graphique</li>
+                        <li>Production d’animations</li>
+                        <li>Design UI/Ux</li>
+                        <li>Production audio-visuel</li>
+                        <li>Exploration des “workframes” et librairies : bootstap, react, animate css, three.js, nodes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="realisations">
+            <div id="filter">
+                <div id="reali-text" class="wow animate__animated animate__fadeInUp" data-wow-duration="2s">
+                    <h3>Réalisations web</h3>
+                    <p>La programmation est l’aspect qui m’intéresse et me pationne le plus. 
+                        Lors de ma formation, j’ai eu la chance d’étudier les languages html, css et javascript et de les appliquer dans divers petits projets. 
+                        Parmis ceux-ci, le javascript et le css sont ceux qui me fascinent le plus!</p>
+                    <p>Voici quelques exemples de réalisations web.</p>
+                </div>
+                <div id="reali-img-links" class="wow animate__animated animate__fadeInDown realiWeb" data-wow-duration="2s">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="animations">
+            <div id="anim-text" class="wow animate__animated animate__fadeInTopLeft" data-wow-duration="2s">
+                <h3>Création d’animations</h3>
+                <p>La création d’animation va aussi de pair avec le javascript. L’étude de ce sujet fut pour moi une révélation.
+                    Marier l’animation au code me permet à la fois d’exploiter mon esprit logique et créatif.</p>
+                <p>Voici une animation réalisée à l’aide d’adobe after effects.</p>
+            </div >
+            <div class="wow animate__animated animate__fadeInBottomRight animationsProject">
+
+            </div>
+        </div>
+        <div id="proto">
+            <div id="proto-text" class="wow animate__animated animate__fadeInRight" data-wow-duration="2s">
+                <h3>Prototypage</h3>
+                <p>Le prototypage est une étape très importante du processus de conception d’un projet web. </p>
+                <p>Nous avons pu mettre en oeuvre nos compétences acquises lors d’une collaboration pour l’organisme à but non lucratif des Compagnons de la mise en valeur du patrimoine vivant de Trois-Pistoles.</p>
+            </div>
+            <div class="prototypeProject">
+
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <sdiv id="footer-nav">
+            <div>
+                <a href="#upper">Qui suis-je?</a>
+            </div>
+            <div>
+                <a href="#books">Formation</a>
+            </div>
+            <div>
+                <a href="#realisations">Réalisation web</a>
+            </div>
+            <div>
+                <a href="#animations">Création d'animations</a>
+            </div>
+            <div>
+                <a href="#proto">Prototypage</a>
+            </div>
+            <div>
+                <a href="#contact">Contact</a>
+            </div>
+        </sdiv>
+        <div id="contact">
+            <h4>Contact</h4>
+            <div id="email-div">
+                <a href ="mailto: simsarr@gmail.com" id="email"><img src="./img/email.png" alt="email logo"> Email</a>
+            </div>
+            <div id="linkedin-div">
+                <a href="https://www.linkedin.com/in/simon-sarrazin/" id="linkedin"><img src="./img/linkedin-logo.png" alt="linkedin logo">  Linkedin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
